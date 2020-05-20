@@ -12,7 +12,6 @@ module.exports = {
   "test should check if filter by course works": async function(browser) {
     const homePage = browser.page.home();
     const searchPage = browser.page.searchPage();
-    const coursePage = browser.page.coursePage();
     let filterName;
 
     homePage.waitForElementVisible(
@@ -28,7 +27,6 @@ module.exports = {
       "Waiting customer data page appear..."
     );
     filterName = await searchPage.getText("@filterTitle");
-    console.log(filterName);
     expect(filterName.value).to.equal("Todos os concursos");
   },
 
@@ -50,14 +48,12 @@ module.exports = {
       "Waiting customer data page appear..."
     );
     filterName = await searchPage.getText("@filterTitle");
-    console.log(filterName);
     expect(filterName.value).to.equal("Todos os professores");
   },
 
   "test should check if filter by subject works": async function(browser) {
     const homePage = browser.page.home();
     const searchPage = browser.page.searchPage();
-    const coursePage = browser.page.coursePage();
     let filterName;
 
     homePage.waitForElementVisible(
@@ -73,14 +69,12 @@ module.exports = {
       "Waiting customer data page appear..."
     );
     filterName = await searchPage.getText("@filterTitle");
-    console.log(filterName);
     expect(filterName.value).to.equal("Todas as matérias");
   },
 
   "test should check if filter by area works": async function(browser) {
     const homePage = browser.page.home();
     const searchPage = browser.page.searchPage();
-    const coursePage = browser.page.coursePage();
     let filterName;
 
     homePage.waitForElementVisible(
@@ -96,7 +90,6 @@ module.exports = {
       "Waiting customer data page appear..."
     );
     filterName = await searchPage.getText("@filterTitleNoTrend");
-    console.log(filterName);
     expect(filterName.value).to.equal("Cursos por região");
   }
 };

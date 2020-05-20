@@ -1,6 +1,7 @@
 const { expect } = require("chai");
 
 module.exports = {
+  "@tags": ["price"],
   before: function(browser) {
     browser.url(process.env.BASE_URL);
   },
@@ -9,7 +10,9 @@ module.exports = {
     browser.end();
   },
 
-  "test should check if course price is correctly displayed": async function(browser) {
+  "test should check if course price is correctly displayed": async function(
+    browser
+  ) {
     const homePage = browser.page.home();
     const searchPage = browser.page.searchPage();
     const coursePage = browser.page.coursePage();
@@ -39,7 +42,7 @@ module.exports = {
 
     coursePage.waitForElementVisible(
       "@coursePrice",
-      5000,
+      8000,
       "Waiting customer data page appear..."
     );
 
