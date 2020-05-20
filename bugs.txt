@@ -20,3 +20,7 @@ Bugs:
 
 
 Improviments:
+
+1 - Add name that makes sense to fields, to improve the accessibility of web site(search field has a attribute name="q")
+
+2 - Use buttons only when the button have a action(when using filter the title "Todos os professores" is a button but it doesn't works)
