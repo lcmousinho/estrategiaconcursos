@@ -1,6 +1,7 @@
 const { expect } = require("chai");
 
 module.exports = {
+    "@tags": ["filter"],
   before: function(browser) {
     browser.url(process.env.BASE_URL);
   },
