@@ -1,0 +1,22 @@
+Bugs:
+
+1 - Summary: Performning search doesn't work when result is not loaded
+    Description: When using a filter and trying to perform a search before the filter results is displayed search is not working
+    Reproduce steps:
+        1. Use some filter from main page
+        2. Type someting on search spot before filter result is displayed
+    Expected result: WHen filter result is displayed search is performed
+    Actual result: Search is not appled
+
+2 - Summary: Number of courses in "Ver todos" section doesn't match real courses number
+    Description: After going to "Ver todos" section the number os courses displayed for teachers or subjects is 0 but it should be the real number of courses
+    Reproduce steps:
+        1. Go to "Ver todos" section
+        2. Check number of courses displayed for some teacher or subject
+        3. Open teacher or subject
+        4. Check if number matchs previous page
+    Expected result: Number of courses is the same on both pages
+    Actual result: Number on "Ver todos" section is 0
+
+
+Improviments:

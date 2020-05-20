@@ -1,0 +1,18 @@
+1 - Summary: Search filter should me working for all filters
+    Test steps:
+        1. Go to https://www.estrategiaconcursos.com.br/
+        2. Choose one filter from home screen
+        3. Validate that results matchs chosen filter
+    
+2 - Summary: Using "Ver todos" filter check if number of courses in description matchs real number
+    Test steps:
+        1. Go to https://www.estrategiaconcursos.com.br/
+        2. Use "Ver todos" filter
+        3. In professor spot check number of courses and open professor page.
+        4. Check if number of courses matchs number of previous page.
+
+3 - Summary: Validate that search by course type shows only related courses.
+    Test steps:
+        1. Go to https://www.estrategiaconcursos.com.br/
+        2. Type on search some course type(EX. "Juiz", "Policia militar")
+        3. On the result page check if only related courses is displayed

@@ -1,0 +1,23 @@
+{
+  "name": "estrategiaconcursos",
+  "description": "e2e automation tests",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "dotenv": "^8.0.0",
+    "selenium-standalone": "^6.17.0",
+    "wd": "^1.11.1",
+    "webdriverio": "^4.14.1",
+    "chromedriver": "^81.0"
+  },
+  "devDependencies": {
+    "chromedriver": "^81.0",
+    "nightwatch": "^0.9.21",
+    "selenium-server": "^3.141.59"
+  }
+}
